@@ -1,6 +1,6 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WebThingsIO/webthing-arduino)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Citrullin/web-of-thing-arduino)
 
-webthing-arduino
+Web of Things TD for Arduino
 ================
 
 A simple Web of Things Thing Description compatible library, for the ESP32 mainly.
@@ -54,7 +54,7 @@ it in your sketchbook's libraries folder.
 
 ## PlatformIO
 
-Add the `webthing-arduino` library through PlatformIO's package management
+Add the `web-of-things-arduino` library through PlatformIO's package management
 interface. Ensure that you get the latest release by examining the entries
 in the version number dropdown list. It may be sorted counter-intuitively.
 You may also need to manually add the ArduinoJson and other libraries to 
@@ -158,7 +158,3 @@ void loop(void) {
     #include <Thing.h>
     #include <WebThingAdapter.h>
     ```
-
-# Adding to Gateway
-
-To add your web thing to the WebThings Gateway, install the "Web Thing" add-on and follow the instructions [here](https://github.com/WebThingsIO/thing-url-adapter#readme).
