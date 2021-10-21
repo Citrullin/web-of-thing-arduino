@@ -3,6 +3,9 @@
 Web of Things TD for Arduino
 ================
 
+:warning: This library does **not** support the Mozilla WebThings RFC. 
+It supports only the industry standard recommended by the W3C. (Web of Things TD 1.0)
+
 A simple Web of Things Thing Description compatible library, for the ESP32 mainly.
 Available examples
 - [BME280](/examples/BME280)
@@ -13,20 +16,20 @@ Available examples
 
 If you need a more extensive explanation of the usage of this library, we have some step by step tutorials available with more context.
 
-### WebThings Arduino + Node-WoT
+### Web of Things Arduino + Node-WoT
 
 [Node-WoT](https://github.com/eclipse/thingweb.node-wot) is a Javascript client library to consume Web of Things devices.
 
 - [Show number of Github forks and stars on Matrix display](https://bind.systems/blog/web-of-things-github-forks-stars/)
 - [Run speedtest and show results on an OLED display](https://bind.systems/blog/web-of-things-speedtest/)
 
-### WebThings Arduino + Node-RED
+### Web of Things Arduino + Node-RED
 
 [Node-RED](https://nodered.org/) is a drag and drop tool for connecting devices. It requires little Javascript programming knowledge.
 
 - [Connect temperature sensor to OLED display](https://bind.systems/blog/web-of-things-node-red-temperature-oled/)
 
-### WebThings Arduino
+### Web of Things Arduino
 
 - [Blinking LED](https://bind.systems/blog/web-of-things-led/)
 - [Matrix display](https://bind.systems/blog/web-of-things-arduino-matrix-display/)
