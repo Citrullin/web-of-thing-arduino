@@ -57,11 +57,7 @@ it in your sketchbook's libraries folder.
 
 ## PlatformIO
 
-Add the `web-of-things-arduino` library through PlatformIO's package management
-interface. Ensure that you get the latest release by examining the entries
-in the version number dropdown list. It may be sorted counter-intuitively.
-You may also need to manually add the ArduinoJson and other libraries to 
-your project.
+The PlatformIO integegration isn't complete yet.
 
 ## Example
 
