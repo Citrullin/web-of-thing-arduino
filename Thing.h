@@ -243,20 +243,23 @@ public:
   ThingDataValue getValue() { return this->value; }
 
   void serialize(JsonObject obj, String deviceId, String resourceType) {
+    obj["type"] = "object";
+    JsonObject properties = obj.createNestedObject("properties");
+    JsonObject property_id = properties.createNestedObject(id);
     switch (type) {
     case NO_STATE:
       break;
     case BOOLEAN:
-      obj["type"] = "boolean";
+      property_id["type"] = "boolean";
       break;
     case NUMBER:
-      obj["type"] = "number";
+      property_id["type"] = "number";
       break;
     case INTEGER:
-      obj["type"] = "integer";
+      property_id["type"] = "integer";
       break;
     case STRING:
-      obj["type"] = "string";
+      property_id["type"] = "string";
       break;
     }
 
@@ -265,7 +268,7 @@ public:
     }
 
     if (unit != "") {
-      obj["unit"] = unit;
+      property_id["unit"] = unit;
     }
 
     if (title != "") {
